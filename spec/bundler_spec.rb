@@ -4,7 +4,6 @@ describe "Bundler" do
     let(:gemfile_text) { File.read('Gemfile') }
     let(:bundle_output) do
       Bundler.with_unbundled_env do
-        # Use bundle list to show installed gems instead of reinstalling
         `bundle list 2>&1`
       end
     end
