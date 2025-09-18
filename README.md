@@ -36,7 +36,7 @@ free service provided for the Ruby community. You can install gems via the
 terminal:
 
 ```console
-$ gem install rspec
+gem install rspec
 ```
 
 When you run this command, Ruby locates the gem,
@@ -191,7 +191,7 @@ Bundler _itself_ is a Ruby gem, which should already be installed on your
 system. You can make sure you have the latest version by running:
 
 ```console
-$ gem install bundler
+gem install bundler
 ```
 
 [bundler]: https://bundler.io/
@@ -365,7 +365,7 @@ group :development do
 end
 ```
 
-**Run your test suite with `learn test` to see what gems you'll be adding to
+**Run your test suite with `bin/rspec` to see what gems you'll be adding to
 your gem file. Add the appropriate gems, specifying their version when
 necessary, to get the tests passing**.
 
@@ -394,7 +394,7 @@ in a group) and the `development` group.
 
 **Place the following code in `config/environment.rb`:**
 
-```ruby
+```rb
 require 'bundler/setup'
 Bundler.require(:default, :development)
 ```
