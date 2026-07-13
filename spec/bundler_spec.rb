@@ -23,13 +23,13 @@ describe "Bundler" do
     end
 
     # http://bundler.io/v1.3/gemfile.html
-    it "lists the sinatra gem with the specific version 2.0.2" do
-      expect(gemfile_text =~ /gem ['"]sinatra['"], ?['"]v?2\.0\.2['"]/).not_to eq(nil)
+    it "lists the sinatra gem with the specific version 4.2.1" do
+      expect(gemfile_text =~ /gem ['"]sinatra['"], ?['"]v?4\.2\.1['"]/).not_to eq(nil)
     end
 
     # http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator
-    it "lists the octokit gem specifying version 2.0 with a twiddle-wakka" do
-      expect(gemfile_text =~ /gem ['"]octokit['"], ?['"]~> ?2\.0['"]/).not_to eq(nil)
+    it "lists the octokit gem specifying version 9.0 with a twiddle-wakka" do
+      expect(gemfile_text =~ /gem ['"]octokit['"], ?['"]~> ?9\.0['"]/).not_to eq(nil)
     end
 
     # http://bundler.io/git.html
