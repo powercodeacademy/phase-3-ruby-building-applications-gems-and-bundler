@@ -23,7 +23,7 @@ describe "Bundler" do
     end
 
     # http://bundler.io/v1.3/gemfile.html
-    it "lists the sinatra gem with the specific version 4.2.1" do
+     it "lists the sinatra gem with the specific version 4.2.1" do
       expect(gemfile_text =~ /gem ['"]sinatra['"], ?['"]v?4\.2\.1['"]/).not_to eq(nil)
     end
 
